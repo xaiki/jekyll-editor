@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.babel.js",
+    "watch": "webpack --config webpack.config.babel.js --watch",
     "start": "npm run build && electron .",
-    "postinstall": "bash postinstall.sh && mv .env.sample .env",
     "add-cors": "add-cors-to-couchdb"
   },
   "author": "James Jeffery",
@@ -32,5 +32,15 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "es6-promisify-all": "^0.1.0",
+    "flux": "^3.1.2",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "marked": "^0.3.6",
+    "react-github": "^2.1.2",
+    "react-md-editor": "^0.2.2",
+    "webpack-target-electron-renderer": "^0.4.0"
   }
 }
